@@ -1,0 +1,7 @@
+22:51:54.303 [main] DEBUG frameworkdata.AddItemsToCart - opened URL
+22:52:40.782 [main] DEBUG frameworkdata.AddItemsToCart - starting test
+22:52:48.154 [main] DEBUG frameworkdata.AddItemsToCart - opened URL
+22:53:44.623 [main] INFO  frameworkdata.VerifyEmptyCart - Browser initialized
+22:53:46.333 [main] INFO  frameworkdata.VerifyEmptyCart - Navigated to URL
+22:53:46.458 [main] INFO  frameworkdata.VerifyEmptyCart - Clicked on cart button
+23:01:37.220 [main] INFO  frameworkdata.VerifyEmptyCart - Browser initialized

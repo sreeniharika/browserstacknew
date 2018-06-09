@@ -1,0 +1,4 @@
+23:01:41.489 [main] INFO  frameworkdata.VerifyEmptyCart - Navigated to URL
+23:01:41.681 [main] INFO  frameworkdata.VerifyEmptyCart - Clicked on cart button
+23:01:47.457 [main] DEBUG frameworkdata.AddItemsToCart - starting test
+23:01:54.333 [main] DEBUG frameworkdata.AddItemsToCart - opened URL
