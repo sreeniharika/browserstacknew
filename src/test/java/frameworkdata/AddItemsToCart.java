@@ -37,6 +37,10 @@ public class AddItemsToCart extends testbase.base {
 	SoftAssert softAssert = new SoftAssert();
     private static Logger log = LogManager.getLogger(AddItemsToCart.class.getName());
     util u = new util();
+    
+    public static final String USERNAME = "niharika19";
+	  public static final String AUTOMATE_KEY = "hHgdnVvMTDRFrxJZ23ay";
+	  public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
     @BeforeTest
 	public void driverinitialize() throws IOException{
@@ -44,16 +48,26 @@ public class AddItemsToCart extends testbase.base {
 		test.log(LogStatus.INFO, "starting the test AddItemsToCart");
 		log.debug("starting test");
 		
-		initializeDriver();
+		//initializeDriver();
 		//driver.get("http://shop.thetestingworld.com/");
+		
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setCapability("browser", "Firefox");
+		caps.setCapability("browser_version", "61.0 beta");
+		caps.setCapability("os", "Windows");
+		caps.setCapability("os_version", "8.1");
+		caps.setCapability("resolution", "1024x768");
+	    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+	    testbase.Config config = new testbase.Config(prop);
+	    driver.get(config.getUrl());
 		
 	}
 	
 	@Test
 	public void cartItems() throws IOException, InterruptedException{
 		
-		testbase.Config config = new testbase.Config(prop);
-	     driver.get(config.getUrl());
+		//testbase.Config config = new testbase.Config(prop);
+	     //driver.get(config.getUrl());
 		
 		test.log(LogStatus.PASS, "opened url");
 		log.debug("opened URL");
